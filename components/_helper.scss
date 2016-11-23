@@ -1,0 +1,134 @@
+// colors
+.background {
+  background: $background;
+}
+
+.background-primary {
+  background: $primary-color;
+}
+
+.background-secundary {
+  background: $secondary-color;
+}
+
+.background-darker {
+  background: darken($background, 10%);
+}
+
+.text-primary {
+  color: $primary-color;
+}
+
+.text-secondary {
+  color: $secondary-color;
+}
+
+.text-default {
+  color: $font-color;
+}
+
+.text-darker {
+  color: darken($font-color, 10%);
+}
+
+.text-white {
+  color:white;
+}
+// spaces
+.margin {
+  margin: $space;
+}
+
+.margin-double {
+  margin: $space * 2;
+}
+
+.margin-half {
+  margin: $space * 0.5;
+}
+
+.margin-quarter {
+  margin: $space * 0.25;
+}
+
+.padding {
+  padding: $space;
+}
+
+.padding-double {
+  padding: $space * 2;
+}
+
+.padding-half {
+  padding: $space * 0.5;
+}
+
+.padding-quarter {
+  padding: $space * 0.25;
+}
+
+// text
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+// align
+.vertical-center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.vertical-botton {
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+}
+.vertical-top {
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+}
+.vertical-stretch {
+	display: flex;
+	align-items: stretch;
+	justify-content: center;
+}
+// floats
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.fixed {
+  position: fixed;
+}
+// extras
+.link {
+  cursor: pointer;
+}
+
+.show {
+	display: block !important;
+}
+
+.hide {
+	display: none !important;
+}
+
+.invisible {
+	visibility: hidden;
+}
+
+.image-responsive {
+	max-width: 100%;
+}

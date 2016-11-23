@@ -2,11 +2,11 @@
 
 // configuration
 @import "base/variables";
-
+@import "base/mixin";
 // reset
 @import "base/normalize";
-
 // components
 @import "components/grid";
 @import "components/type";
-@import "components/helpers";
+@import "components/button";
+@import "components/helper";

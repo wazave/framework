@@ -8,20 +8,46 @@
   flex-basis: 100%;
 }
 
-@media screen and (min-width: 800px) {
+@each $entry in $grid {
+  .tablet-#{floor($entry)},
+  .desktop-#{floor($entry)} {
+    width: 100%;
+  }
+  .flex-#{floor($entry)} {
+    flex: #{floor($entry) * 0.1};
+  }
+  .width-#{floor($entry)} {
+    width: percentage($entry) * 0.01;
+    float: left;
+  }
+  .push-#{floor($entry)} {
+    margin-left: percentage($entry) * 0.01;
+  }
+}
+
+@include tablet {
+  @each $entry in $grid {
+    .tablet-#{floor($entry)} {
+      width: percentage($entry) * 0.01;
+      float: left;
+    }
+    .push-tablet-#{floor($entry)} {
+      margin-left: percentage($entry) * 0.01;
+    }
+  }
   .column {
     flex: 1;
   }
 }
 
-.f3 {
-  flex: 3;
-}
-
-.f7 {
-  flex: 7;
-}
-
-._30 {
-  width: 30%;
+@include desktop {
+  @each $entry in $grid {
+    .desktop-#{floor($entry)} {
+      width: percentage($entry) * 0.01;
+      float: left;
+    }
+    .push-desktop-#{floor($entry)} {
+      margin-left: percentage($entry) * 0.01;
+    }
+  }
 }

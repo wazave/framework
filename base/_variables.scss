@@ -1,24 +1,20 @@
-$x-small: 600px;
-$small: 800px;
-$medium: 1000px;
-$large: 1200px;
+$grid: 10,20,30,40,50,60,70,80,90,100,25,16.6667,33.3333,66.6667,75;
+$buttons: ('a.button, .button, button');
+$transition: 0;
 
-$mobile: $x-small;
-$desktop: $medium;
+$tablet: 600px;
+$desktop: 900px;
 
+$font-size: 1rem;
 $space: 1.5rem;
-$double-space: 3rem;
+$border: 2px;
 
 $background: #ffffff;
-$primary-color: #1E6BD6;
-$secondary-color: #47CE90;
-$accent-color: #cdcdcd;
-$alternate-background: #888;
-$link-color: $primary-color;
-$link-hover-color: lighten($link-color, 15%);
-$highlight: #ffeea8;
-$error: #D33C40;
-$bq-border: 8px solid #cdcdcd;
+$alternate-background: #d5d5d5;
+$primary-color: #00549F;
+$secondary-color: #68953B;
+$font-color: #404040;
+$font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 
 $blue:#00549F;
 $skyBlue:#4a7bab;
@@ -28,82 +24,56 @@ $yellow:#DB9635;
 $orange:#eb3c00;
 $blueHover:#013360;
 
-$font-size: 1.5rem;
-$body-font-size: 1rem;
-$font-style: normal;
-$font-variant: normal;
-$font-weight: normal;
-$font-color: #404040;
-$font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-$line-height: 1.5rem;
 
-$heading-font-color: #404040;
-$heading-font-weight: 400;
-$heading-font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-$heading-line-height: 3rem;
 
-$h1: 1.6rem;
+// $border-width: 1px;
+// $border-style: solid;
+// $border-color: #cdcdcd;
+// $border-radius: 4px;
+// $borders: $border-width $border-style $border-color;
 
 
 
-$padding: 2rem;
+// $button-background: $primary;
+// $button-background-hover: darken($button-background, 10%);
+// $button-color: #ffffff;
+// $button-font-weight: 600;
+// $button-font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+// $button-font-size: 1rem;
+// $button-border-width: 1px;
+// $button-border-style: solid;
+// $button-border-color: $button-background;
+// $button-border-radius: $border-radius;
+// $button-text-transform: uppercase;
 
+// // Accent buttons
+// $accent-button-background: $secondary;
+// $accent-button-color: #ffffff;
+// $accent-button-color-hover: #ffffff;
 
+// // Muted Buttons
+// $muted-border: 1px solid $accent;
+// $muted-border-hover: 1px solid darken($accent, 30%);
+// $muted-background: transparent;
+// $muted-background-hover: transparent;
+// $muted-color: darken($accent-color, 50%);
+// $muted-color-hover: darken($accent-color, 50%);
 
-$border-width: 1px;
-$border-style: solid;
-$border-color: #cdcdcd;
-$border-radius: 4px;
-$borders: $border-width $border-style $border-color;
+// // Round Buttons
+// $round-buttons: 40px;
 
+// $forms: ('[type=color], [type=date], [type=datetime], [type=datetime-local], [type=email], [type=month], [type=number], [type=password], [type=search], [type=tel], [type=text], [type=url], [type=week], [type=time], select, textarea');
+// $buttons: ('.button, a.button, button, [type=submit], [type=reset], [type=button]');
+// $input-background: #ffffff;
+// $placeholder: darken($accent-color, 20%);
+// $form-border: 1px solid #cdcdcd;
+// $form-border-hover: 1px solid darken(#cdcdcd, 10%);
+// $form-border-focus: 1px solid #898989;
 
+// $stripes: #f0f0f0;
+// $caption: darken($accent-color, 20%);
 
-$button-background: $primary-color;
-$button-background-hover: darken($button-background, 10%);
-$button-color: #ffffff;
-$button-font-weight: 600;
-$button-font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-$button-font-size: 1rem;
-$button-border-width: 1px;
-$button-border-style: solid;
-$button-border-color: $button-background;
-$button-border-radius: $border-radius;
-$button-text-transform: uppercase;
-
-// Accent buttons
-$accent-button-background: $secondary-color;
-$accent-button-color: #ffffff;
-$accent-button-color-hover: #ffffff;
-
-// Muted Buttons
-$muted-border: 1px solid $accent-color;
-$muted-border-hover: 1px solid darken($accent-color, 30%);
-$muted-background: transparent;
-$muted-background-hover: transparent;
-$muted-color: darken($accent-color, 50%);
-$muted-color-hover: darken($accent-color, 50%);
-
-// Round Buttons
-$round-buttons: 40px;
-
-
-
-$forms: ('[type=color], [type=date], [type=datetime], [type=datetime-local], [type=email], [type=month], [type=number], [type=password], [type=search], [type=tel], [type=text], [type=url], [type=week], [type=time], select, textarea');
-$buttons: ('.button, a.button, button, [type=submit], [type=reset], [type=button]');
-$input-background: #ffffff;
-$placeholder: darken($accent-color, 20%);
-$form-border: 1px solid #cdcdcd;
-$form-border-hover: 1px solid darken(#cdcdcd, 10%);
-$form-border-focus: 1px solid #898989;
-
-
-
-$stripes: #f0f0f0;
-$caption: darken($accent-color, 20%);
-
-
-
-$code-color: $font-color;
-$code-family: Menlo, monospace;
-$code-background: #f4f4f4;
-$code-borders: $borders;
+// $code-color: $font-color;
+// $code-family: Menlo, monospace;
+// $code-background: #f4f4f4;
+// $code-borders: $borders;

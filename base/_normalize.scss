@@ -1,5 +1,5 @@
 html {
-    font: $font-style $font-variant $font-weight #{$font-size}/#{$space} $font-family;
+    font-family: $font-family;
     font-size: $font-size;
     line-height: $space;
     margin: 0;
@@ -42,13 +42,12 @@ h4 {
 strong {
     font-weight: bold;
 }
-a,
-button {
-    color: inherit;
-    transition: .3s;
-}
 a {
+    transition: $transition;
     text-decoration: none;
+      &:hover {
+    text-decoration: underline;
+  }
 }
 button {
     overflow: visible;
