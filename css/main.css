@@ -1,0 +1,149 @@
+/*! by Abel Elizalde */
+/* Padding */
+/* Borders */
+/* Buttons */
+/* Forms */
+/* Tables */
+/* Code */
+html {
+  font: normal normal normal 1.5rem/1.5rem Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  margin: 0;
+  box-sizing: border-box; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+body {
+  margin: 0;
+  color: #404040;
+  background: #ffffff;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased; }
+
+h1,
+h2,
+h3,
+h4,
+p,
+blockquote,
+figure,
+ol,
+ul {
+  margin: 0;
+  padding: 0; }
+
+main,
+li {
+  display: block; }
+
+h1,
+h2,
+h3,
+h4 {
+  font-size: inherit; }
+
+strong {
+  font-weight: bold; }
+
+a,
+button {
+  color: inherit;
+  transition: .3s; }
+
+a {
+  text-decoration: none; }
+
+button {
+  overflow: visible;
+  border: 0;
+  font: inherit;
+  -webkit-font-smoothing: inherit;
+  letter-spacing: inherit;
+  background: none;
+  cursor: pointer; }
+
+::-moz-focus-inner {
+  padding: 0;
+  border: 0; }
+
+:focus {
+  outline: 0; }
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+
+.column {
+  flex-basis: 100%; }
+
+@media screen and (min-width: 800px) {
+  .column {
+    flex: 1; } }
+
+.f3 {
+  flex: 3; }
+
+.f7 {
+  flex: 7; }
+
+._30 {
+  width: 30%; }
+
+h1 {
+  font-weight: 400;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  line-height: 3rem;
+  color: #404040; }
+
+.bg-primary {
+  background: #1E6BD6; }
+
+.bg-secundary {
+  background: #47CE90; }
+
+.background {
+  background: #ffffff; }
+
+.alt-background {
+  background: #888; }
+
+.primary {
+  color: #1E6BD6; }
+
+.secondary {
+  color: #47CE90; }
+
+.margin {
+  margin: 1.5rem; }
+
+.double-margin {
+  margin: 3rem; }
+
+.half-margin {
+  margin: 0.75rem; }
+
+.padding {
+  padding: 1.5rem; }
+
+.double-padding {
+  padding: 3rem; }
+
+.half-padding {
+  padding: 0.75rem; }
+
+.text-center {
+  text-align: center; }
+
+.float-left {
+  float: left; }
+
+.float-right {
+  float: right; }
+
+.link {
+  cursor: pointer; }

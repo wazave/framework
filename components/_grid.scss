@@ -1,0 +1,27 @@
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex-basis: 100%;
+}
+
+@media screen and (min-width: 800px) {
+  .column {
+    flex: 1;
+  }
+}
+
+.f3 {
+  flex: 3;
+}
+
+.f7 {
+  flex: 7;
+}
+
+._30 {
+  width: 30%;
+}
