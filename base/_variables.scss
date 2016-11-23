@@ -44,11 +44,11 @@ $heading-line-height: 3rem;
 
 $h1: 1.6rem;
 
-/* Padding */
+
 
 $padding: 2rem;
 
-/* Borders */
+
 
 $border-width: 1px;
 $border-style: solid;
@@ -56,7 +56,7 @@ $border-color: #cdcdcd;
 $border-radius: 4px;
 $borders: $border-width $border-style $border-color;
 
-/* Buttons */
+
 
 $button-background: $primary-color;
 $button-background-hover: darken($button-background, 10%);
@@ -86,7 +86,7 @@ $muted-color-hover: darken($accent-color, 50%);
 // Round Buttons
 $round-buttons: 40px;
 
-/* Forms */
+
 
 $forms: ('[type=color], [type=date], [type=datetime], [type=datetime-local], [type=email], [type=month], [type=number], [type=password], [type=search], [type=tel], [type=text], [type=url], [type=week], [type=time], select, textarea');
 $buttons: ('.button, a.button, button, [type=submit], [type=reset], [type=button]');
@@ -96,12 +96,12 @@ $form-border: 1px solid #cdcdcd;
 $form-border-hover: 1px solid darken(#cdcdcd, 10%);
 $form-border-focus: 1px solid #898989;
 
-/* Tables */
+
 
 $stripes: #f0f0f0;
 $caption: darken($accent-color, 20%);
 
-/* Code */
+
 
 $code-color: $font-color;
 $code-family: Menlo, monospace;

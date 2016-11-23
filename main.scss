@@ -1,13 +1,12 @@
 /*! by Abel Elizalde */
 
-// Configuration
+// configuration
 @import "base/variables";
-// @import "base/mixins";
 
-// Reset
+// reset
 @import "base/normalize";
 
-// Components
-@import "Components/grid";
-@import "Components/type";
-@import "Components/helpers";
+// components
+@import "components/grid";
+@import "components/type";
+@import "components/helpers";
