@@ -5,3 +5,18 @@ h1 {
   // line-height: $heading-line-height;
   // color: $heading-font-color;
 }
+html {
+    font-size: 120%;
+  }
+
+@include tablet {
+  html {
+    font-size: 110%;
+  }
+}
+
+@include desktop {
+  html {
+    font-size: 100%;
+  }
+}

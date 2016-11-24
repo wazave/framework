@@ -1,53 +1,67 @@
-.row {
+.r {
+  &::before,
+  &::after {
+    display: block;
+    content: ' ';
+    clear: both;
+  }
+  > * {
+      float: left;
+  }
+}
+
+.flex-row {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
-.column {
+.flex-column {
+  flex: 1;
+}
+
+.flex-small,
+.flex-large {
   flex-basis: 100%;
 }
 
 @each $entry in $grid {
-  .tablet-#{floor($entry)},
-  .desktop-#{floor($entry)} {
-    width: 100%;
+  .cs#{floor($entry)},
+  .cl#{floor($entry)} {
+    width: 100%
   }
-  .flex-#{floor($entry)} {
-    flex: #{floor($entry) * 0.1};
-  }
-  .width-#{floor($entry)} {
+}
+
+@each $entry in $grid {
+  .c#{floor($entry)} {
     width: percentage($entry) * 0.01;
-    float: left;
-  }
-  .push-#{floor($entry)} {
-    margin-left: percentage($entry) * 0.01;
   }
 }
 
 @include tablet {
   @each $entry in $grid {
-    .tablet-#{floor($entry)} {
+    .cs#{floor($entry)} {
       width: percentage($entry) * 0.01;
-      float: left;
     }
-    .push-tablet-#{floor($entry)} {
+    .pcs#{floor($entry)} {
       margin-left: percentage($entry) * 0.01;
     }
   }
-  .column {
-    flex: 1;
-  }
+	.flex-small {
+		flex: 1;
+	}
 }
 
 @include desktop {
   @each $entry in $grid {
-    .desktop-#{floor($entry)} {
+    .cl#{floor($entry)} {
       width: percentage($entry) * 0.01;
-      float: left;
     }
-    .push-desktop-#{floor($entry)} {
+    .pcl#{floor($entry)} {
       margin-left: percentage($entry) * 0.01;
     }
   }
+	.flex-large {
+		flex: 1;
+	}
 }

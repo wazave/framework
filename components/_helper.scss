@@ -1,101 +1,189 @@
 // colors
-.background {
+.b {
   background: $background;
 }
 
-.background-primary {
+.b-p {
   background: $primary-color;
 }
 
-.background-secundary {
+.b-s {
   background: $secondary-color;
 }
 
-.background-darker {
+.b-d {
   background: darken($background, 10%);
 }
 
-.text-primary {
-  color: $primary-color;
-}
-
-.text-secondary {
-  color: $secondary-color;
-}
-
-.text-default {
+.t {
   color: $font-color;
 }
 
-.text-darker {
+.t-p {
+  color: $primary-color;
+}
+
+.t-s {
+  color: $secondary-color;
+}
+
+.t-d {
   color: darken($font-color, 10%);
 }
 
-.text-white {
+.t-white {
   color:white;
 }
 // spaces
-.margin {
+.m {
   margin: $space;
 }
 
-.margin-double {
+.m-0{
+  margin: 0;
+} 
+
+.m-d {
   margin: $space * 2;
 }
 
-.margin-half {
+.m-h {
   margin: $space * 0.5;
 }
 
-.margin-quarter {
+.m-q {
   margin: $space * 0.25;
 }
 
-.padding {
+.m-v {
+  margin-top: $space;
+  margin-bottom: $space;
+}
+
+.m-v-d {
+  margin-top: $space * 2;
+  margin-bottom: $space * 2;
+}
+
+.m-v-h {
+  margin-top: $space * 0.5;
+  margin-bottom: $space * 0.5;
+}
+
+.m-v-q {
+  margin-top: $space * 0.25;
+  margin-bottom: $space * 0.25;
+}
+
+.m-h {
+  margin-left: $space;
+  margin-right: $space;
+}
+
+.m-h-d {
+  margin-left: $space * 2;
+  margin-right: $space * 2;
+}
+
+.m-h-h {
+  margin-left: $space * 0.5;
+  margin-right: $space * 0.5;
+}
+
+.m-h-q {
+  margin-left: $space * 0.25;
+  margin-right: $space * 0.25;
+}
+
+.p {
   padding: $space;
 }
 
-.padding-double {
+.p-0 {
+  padding: 0;
+}
+
+.p-d {
   padding: $space * 2;
 }
 
-.padding-half {
+.p-h {
   padding: $space * 0.5;
 }
 
-.padding-quarter {
+.p-q {
   padding: $space * 0.25;
 }
 
+.p-v {
+  padding-top: $space;
+  padding-bottom: $space;
+}
+
+.p-v-d {
+  padding-top: $space * 2;
+  padding-bottom: $space * 2;
+}
+
+.p-v-h {
+  padding-top: $space * 0.5;
+  padding-bottom: $space * 0.5;
+}
+
+.p-v-q {
+  padding-top: $space * 0.25;
+  padding-bottom: $space * 0.25;
+}
+
+.p-h {
+  padding-left: $space;
+  padding-right: $space;
+}
+
+.p-h-d {
+  padding-left: $space * 2;
+  padding-right: $space * 2;
+}
+
+.p-h-h {
+  padding-left: $space * 0.5;
+  padding-right: $space * 0.5;
+}
+
+.p-h-q {
+  padding-left: $space * 0.25;
+  padding-right: $space * 0.25;
+}
+
 // text
-.text-center {
+.t-c {
   text-align: center;
 }
 
-.text-left {
+.t-l{
   text-align: left;
 }
 
-.text-right {
+.t-r {
   text-align: right;
 }
 // align
-.vertical-center {
+.v-c {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
-.vertical-botton {
+.v-b {
 	display: flex;
 	align-items: flex-end;
 	justify-content: center;
 }
-.vertical-top {
+.v-t {
 	display: flex;
 	align-items: flex-start;
 	justify-content: center;
 }
-.vertical-stretch {
+.v-s {
 	display: flex;
 	align-items: stretch;
 	justify-content: center;
