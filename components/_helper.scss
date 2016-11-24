@@ -32,16 +32,65 @@
 }
 
 .twhite {
-  color:white;
+  color: white;
 }
+
+.tblue {
+  color: $blue;
+}
+
+.tgreen {
+  color: $green;
+}
+
+.tred {
+  color: $red;
+}
+
+.tyellow {
+  color: $yellow;
+}
+
+.thblue {
+  &:hover {
+    color: $blue;
+  }
+}
+
+.thgreen {
+  &:hover {
+    color: $green;
+  }
+}
+
+.thred {
+  &:hover {
+    color: $red;
+  }
+}
+
+.thyellow {
+  &:hover {
+    color: $yellow;
+  }
+}
+
+.tdn {
+  text-decoration: none;
+}
+
+.tb {
+  font-weight: 600;
+}
+
 // spaces
 .m {
   margin: $space;
 }
 
-.m0{
+.m0 {
   margin: 0;
-} 
+}
 
 .md {
   margin: $space * 2;
@@ -75,7 +124,7 @@
   margin-bottom: $space * 0.25;
 }
 
-.mh {
+.mhlr {
   margin-left: $space;
   margin-right: $space;
 }
@@ -135,7 +184,7 @@
   padding-bottom: $space * 0.25;
 }
 
-.ph {
+.phlr {
   padding-left: $space;
   padding-right: $space;
 }
@@ -160,34 +209,76 @@
   text-align: center;
 }
 
-.tl{
+.tl {
   text-align: left;
 }
 
 .tr {
   text-align: right;
 }
+
+.tj {
+  text-align: justify;
+}
+
 // align
+.image-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .vc {
-	display: flex;
-	align-items: center;
-	justify-content: center;
+  display: flex;
+  align-items: center;
 }
+
 .vb {
-	display: flex;
-	align-items: flex-end;
-	justify-content: center;
+  display: flex;
+  align-items: flex-end;
 }
+
 .vt {
-	display: flex;
-	align-items: flex-start;
-	justify-content: center;
+  display: flex;
+  align-items: flex-start;
 }
+
 .vs {
-	display: flex;
-	align-items: stretch;
-	justify-content: center;
+  display: flex;
+  align-items: stretch;
 }
+
+.hc {
+  display: flex;
+  justify-content: center;
+}
+
+.hb {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.ht {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.hs {
+  display: flex;
+  justify-content: stretch;
+}
+
+.hsb {
+  display: flex;
+  justify-content: space-between;
+}
+
+.vsb {
+  display: flex;
+  justify-content: space-between;
+}
+
 // floats
 .float-left {
   float: left;
@@ -200,23 +291,67 @@
 .fixed {
   position: fixed;
 }
+
 // extras
 .link {
   cursor: pointer;
 }
 
-.show {
-	display: block !important;
+.invisible {
+  visibility: hidden;
+}
+
+.tdn {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 .hide {
-	display: none !important;
+  display: none;
 }
 
-.invisible {
-	visibility: hidden;
+.show {
+  display: inherit;
 }
 
-.image-responsive {
-	max-width: 100%;
+.align-self-flex-end {
+  align-self: flex-end;
+}
+
+.align-self-flex-start {
+  align-self: flex-start;
+}
+
+@include tablet {
+  .hsb {
+    display: flex;
+    justify-content: inherit;
+  }
+  .vsb {
+    display: flex;
+    justify-content: inherit;
+  }
+  .align-self-flex-end {
+    align-self: inherit;
+  }
+  .align-self-flex-start {
+    align-self: inherit;
+  }
+  .hides {
+    display: none;
+  }
+  .shows {
+    display: inherit;
+  }
+}
+
+@include desktop {
+  .hidel {
+    display: none;
+  }
+  .showl {
+    display: inherit;
+  }
 }

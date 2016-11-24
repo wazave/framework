@@ -5,8 +5,8 @@
     content: ' ';
     clear: both;
   }
-  > * {
-      float: left;
+  >* {
+    float: left;
   }
 }
 
@@ -25,6 +25,8 @@
   flex-basis: 100%;
 }
 
+
+
 @each $entry in $grid {
   .cs#{floor($entry)},
   .cl#{floor($entry)} {
@@ -38,6 +40,15 @@
   }
 }
 
+@each $entry in $flex-order {
+  .o#{$entry} {
+    order: $entry;
+  }
+  .pc#{floor($entry)} {
+    margin-left: percentage($entry) * 0.01;
+  }
+}
+
 @include tablet {
   @each $entry in $grid {
     .cs#{floor($entry)} {
@@ -47,9 +58,14 @@
       margin-left: percentage($entry) * 0.01;
     }
   }
-	.flex-small {
-		flex: 1;
-	}
+  .flex-small {
+    flex: 1;
+  }
+  @each $entry in $flex-order {
+    .os#{$entry} {
+      order: $entry;
+    }
+  }
 }
 
 @include desktop {
@@ -61,7 +77,18 @@
       margin-left: percentage($entry) * 0.01;
     }
   }
-	.flex-large {
-		flex: 1;
-	}
+  .flex-large {
+    flex: 1;
+  }
+  @each $entry in $flex-order {
+    .ob#{$entry} {
+      order: $entry;
+    }
+  }
+  .hl {
+    display: none;
+  }
+  .sl {
+    display: inherit;
+  }
 }

@@ -1,22 +1,25 @@
 html {
-    font-family: $font-family;
-    font-size: $font-size;
-    line-height: $space;
-    margin: 0;
-    box-sizing: border-box;
+  font-family: $font-family;
+  font-size: $font-size;
+  line-height: $space;
+  margin: 0;
+  box-sizing: border-box;
 }
+
 *,
 *::before,
 *::after {
   box-sizing: inherit;
 }
+
 body {
-    margin: 0;  
-    color: $font-color;
-    background: $background;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
+  margin: 0;
+  color: $font-color;
+  background: $background;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
 }
+
 h1,
 h2,
 h3,
@@ -26,42 +29,47 @@ blockquote,
 figure,
 ol,
 ul {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
+
 main,
 li {
-    display: block;
+  display: block;
 }
+
 h1,
 h2,
 h3,
 h4 {
-    font-size: inherit;
+  font-size: inherit;
 }
+
 strong {
-    font-weight: bold;
+  font-weight: bold;
 }
+
 a {
-    transition: $transition;
-    text-decoration: none;
-      &:hover {
-    text-decoration: underline;
-  }
+  transition: $transition;
+  text-decoration: none;
+  cursor: pointer;
 }
+
 button {
-    overflow: visible;
-    border: 0;
-    font: inherit;
-    -webkit-font-smoothing: inherit;
-    letter-spacing: inherit;
-    background: none;
-    cursor: pointer;
+  overflow: visible;
+  border: 0;
+  font: inherit;
+  -webkit-font-smoothing: inherit;
+  letter-spacing: inherit;
+  background: none;
+  cursor: pointer;
 }
+
 ::-moz-focus-inner {
-    padding: 0;
-    border: 0;
+  padding: 0;
+  border: 0;
 }
+
 :focus {
-    outline: 0;
+  outline: 0;
 }

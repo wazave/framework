@@ -1,8 +1,19 @@
-$grid: 0, 10,20,30,40,50,60,70,80,90,100,25,16.6667,33.3333,66.6667,75;
-$buttons: ('a.button, .button, button');
-$transition: 0;
+@font-face{
+    font-family: 'newsgoth';
+    src: url('../../css/fonts/newsgotlb.woff2');
+}
 
-$tablet: 600px;
+@font-face{
+    font-family: 'exo';
+    src: url('../../css/fonts/exo.woff2');
+}
+
+$grid: 0, 10,20,30,40,50,60,70,80,90,100,25,16.6667,33.3333,66.6667,75;
+$flex-order: 0,1,2,3,4,5,6,7,8,9,10;
+$buttons: ('a.button, .button, button');
+$transition: .15s;
+
+$tablet: 768px;
 $desktop: 900px;
 
 $font-size: 1rem;
@@ -13,7 +24,7 @@ $background: #ffffff;
 $alternate-background: #d5d5d5;
 $primary-color: #00549F;
 $secondary-color: #68953B;
-$font-color: #404040;
+$font-color: #555659;
 $font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 
 $blue:#00549F;
