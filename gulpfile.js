@@ -1,6 +1,7 @@
 const gulp        = require('gulp');
 const browserSync = require('browser-sync').create();
 const sass        = require('gulp-sass');
+const cleanCSS    = require('gulp-clean-css');
 
 gulp.task('serve', ['sass'], () => {
     browserSync.init({
@@ -13,6 +14,7 @@ gulp.task('serve', ['sass'], () => {
 gulp.task('sass', function() {
     return gulp.src(['./components/*.scss', './base/*.scss', './*.scss'])
         .pipe(sass())
+        .pipe(cleanCSS())
         .pipe(gulp.dest('./css'))
         .pipe(browserSync.stream());
 });

@@ -3,15 +3,15 @@
   background: $background;
 }
 
-.b-p {
+.bp {
   background: $primary-color;
 }
 
-.b-s {
+.bs {
   background: $secondary-color;
 }
 
-.b-d {
+.bd {
   background: darken($background, 10%);
 }
 
@@ -19,19 +19,19 @@
   color: $font-color;
 }
 
-.t-p {
+.tp {
   color: $primary-color;
 }
 
-.t-s {
+.ts {
   color: $secondary-color;
 }
 
-.t-d {
+.td {
   color: darken($font-color, 10%);
 }
 
-.t-white {
+.twhite {
   color:white;
 }
 // spaces
@@ -39,58 +39,58 @@
   margin: $space;
 }
 
-.m-0{
+.m0{
   margin: 0;
 } 
 
-.m-d {
+.md {
   margin: $space * 2;
 }
 
-.m-h {
+.mh {
   margin: $space * 0.5;
 }
 
-.m-q {
+.mq {
   margin: $space * 0.25;
 }
 
-.m-v {
+.mv {
   margin-top: $space;
   margin-bottom: $space;
 }
 
-.m-v-d {
+.mvd {
   margin-top: $space * 2;
   margin-bottom: $space * 2;
 }
 
-.m-v-h {
+.mvh {
   margin-top: $space * 0.5;
   margin-bottom: $space * 0.5;
 }
 
-.m-v-q {
+.mvq {
   margin-top: $space * 0.25;
   margin-bottom: $space * 0.25;
 }
 
-.m-h {
+.mh {
   margin-left: $space;
   margin-right: $space;
 }
 
-.m-h-d {
+.mhd {
   margin-left: $space * 2;
   margin-right: $space * 2;
 }
 
-.m-h-h {
+.mhh {
   margin-left: $space * 0.5;
   margin-right: $space * 0.5;
 }
 
-.m-h-q {
+.mhq {
   margin-left: $space * 0.25;
   margin-right: $space * 0.25;
 }
@@ -99,91 +99,91 @@
   padding: $space;
 }
 
-.p-0 {
+.p0 {
   padding: 0;
 }
 
-.p-d {
+.pd {
   padding: $space * 2;
 }
 
-.p-h {
+.ph {
   padding: $space * 0.5;
 }
 
-.p-q {
+.pq {
   padding: $space * 0.25;
 }
 
-.p-v {
+.pv {
   padding-top: $space;
   padding-bottom: $space;
 }
 
-.p-v-d {
+.pvd {
   padding-top: $space * 2;
   padding-bottom: $space * 2;
 }
 
-.p-v-h {
+.pvh {
   padding-top: $space * 0.5;
   padding-bottom: $space * 0.5;
 }
 
-.p-v-q {
+.pvq {
   padding-top: $space * 0.25;
   padding-bottom: $space * 0.25;
 }
 
-.p-h {
+.ph {
   padding-left: $space;
   padding-right: $space;
 }
 
-.p-h-d {
+.phd {
   padding-left: $space * 2;
   padding-right: $space * 2;
 }
 
-.p-h-h {
+.phh {
   padding-left: $space * 0.5;
   padding-right: $space * 0.5;
 }
 
-.p-h-q {
+.phq {
   padding-left: $space * 0.25;
   padding-right: $space * 0.25;
 }
 
 // text
-.t-c {
+.tc {
   text-align: center;
 }
 
-.t-l{
+.tl{
   text-align: left;
 }
 
-.t-r {
+.tr {
   text-align: right;
 }
 // align
-.v-c {
+.vc {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
-.v-b {
+.vb {
 	display: flex;
 	align-items: flex-end;
 	justify-content: center;
 }
-.v-t {
+.vt {
 	display: flex;
 	align-items: flex-start;
 	justify-content: center;
 }
-.v-s {
+.vs {
 	display: flex;
 	align-items: stretch;
 	justify-content: center;
