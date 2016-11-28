@@ -1,311 +1,121 @@
 // colors
-.b {
+.back {
   background: $background;
 }
 
-.bp {
+.back-primary {
   background: $primary-color;
 }
 
-.bs {
+.back-secondary {
   background: $secondary-color;
 }
 
-.bd {
+.back-dark {
   background: darken($background, 10%);
 }
 
-.t {
-  color: $font-color;
-}
-
-.tp {
+.text-primary {
   color: $primary-color;
 }
 
-.ts {
+.text-secondary {
   color: $secondary-color;
 }
 
-.td {
+.text-dark {
   color: darken($font-color, 10%);
 }
 
-.twhite {
+.text-white {
   color: white;
 }
 
-.tblue {
+.text-blue {
   color: $blue;
 }
 
-.tgreen {
+.text-green {
   color: $green;
 }
 
-.tred {
+.text-red {
   color: $red;
 }
 
-.tyellow {
+.text-yellow {
   color: $yellow;
 }
 
-.thblue {
-  &:hover {
-    color: $blue;
-  }
-}
-
-.thgreen {
-  &:hover {
-    color: $green;
-  }
-}
-
-.thred {
-  &:hover {
-    color: $red;
-  }
-}
-
-.thyellow {
-  &:hover {
-    color: $yellow;
-  }
-}
-
-.tdn {
-  text-decoration: none;
-}
-
-.tb {
-  font-weight: 600;
-}
-
 // spaces
-.m {
-  margin: $space;
-}
-
-.m0 {
-  margin: 0;
-}
-
-.md {
-  margin: $space * 2;
-}
-
-.mh {
-  margin: $space * 0.5;
-}
-
-.mq {
-  margin: $space * 0.25;
-}
-
-.mv {
-  margin-top: $space;
-  margin-bottom: $space;
-}
-
-.mvd {
-  margin-top: $space * 2;
-  margin-bottom: $space * 2;
-}
-
-.mvh {
-  margin-top: $space * 0.5;
-  margin-bottom: $space * 0.5;
-}
-
-.mvq {
-  margin-top: $space * 0.25;
-  margin-bottom: $space * 0.25;
-}
-
-.mhlr {
-  margin-left: $space;
+.push {
   margin-right: $space;
 }
 
-.mhd {
-  margin-left: $space * 2;
-  margin-right: $space * 2;
+.push-bot {
+  margin-bottom: $space;
 }
 
-.mhh {
-  margin-left: $space * 0.5;
-  margin-right: $space * 0.5;
-}
-
-.mhq {
-  margin-left: $space * 0.25;
-  margin-right: $space * 0.25;
-}
-
-.p {
+.island {
   padding: $space;
 }
 
-.p0 {
-  padding: 0;
+.island-double {
+  padding: $space*2;
 }
 
-.pd {
-  padding: $space * 2;
-}
-
-.ph {
-  padding: $space * 0.5;
-}
-
-.pq {
-  padding: $space * 0.25;
-}
-
-.pv {
-  padding-top: $space;
-  padding-bottom: $space;
-}
-
-.pvd {
-  padding-top: $space * 2;
-  padding-bottom: $space * 2;
-}
-
-.pvh {
-  padding-top: $space * 0.5;
-  padding-bottom: $space * 0.5;
-}
-
-.pvq {
-  padding-top: $space * 0.25;
-  padding-bottom: $space * 0.25;
-}
-
-.phlr {
-  padding-left: $space;
-  padding-right: $space;
-}
-
-.phd {
-  padding-left: $space * 2;
-  padding-right: $space * 2;
-}
-
-.phh {
-  padding-left: $space * 0.5;
-  padding-right: $space * 0.5;
-}
-
-.phq {
-  padding-left: $space * 0.25;
-  padding-right: $space * 0.25;
+.gutter {
+  margin-right: $space;
+  margin-left: $space;
 }
 
 // text
-.tc {
+.text-center {
   text-align: center;
 }
 
-.tl {
+.text-left {
   text-align: left;
 }
 
-.tr {
+.text-right {
   text-align: right;
 }
 
-.tj {
+.text-justify {
   text-align: justify;
 }
 
 // align
 .image-container {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.vc {
-  display: flex;
-  align-items: center;
-}
-
-.vb {
-  display: flex;
-  align-items: flex-end;
-}
-
-.vt {
-  display: flex;
-  align-items: flex-start;
-}
-
-.vs {
-  display: flex;
-  align-items: stretch;
-}
-
-.hc {
+.horizontal-center {
   display: flex;
   justify-content: center;
 }
 
-.hb {
+.vertical-center {
   display: flex;
-  justify-content: flex-end;
+  align-items: center;
 }
 
-.ht {
+.vertical-bottom {
   display: flex;
-  justify-content: flex-start;
+  align-items: flex-end;
 }
 
-.hs {
+.vertical-top {
   display: flex;
-  justify-content: stretch;
-}
-
-.hsb {
-  display: flex;
-  justify-content: space-between;
-}
-
-.vsb {
-  display: flex;
-  justify-content: space-between;
-}
-
-// floats
-.float-left {
-  float: left;
-}
-
-.float-right {
-  float: right;
-}
-
-.fixed {
-  position: fixed;
+  align-items: flex-start;
 }
 
 // extras
 .link {
   cursor: pointer;
-}
-
-.invisible {
-  visibility: hidden;
-}
-
-.tdn {
-  text-decoration: none;
-  &:hover {
-    text-decoration: none;
-  }
 }
 
 .hide {
@@ -316,42 +126,20 @@
   display: inherit;
 }
 
-.align-self-flex-end {
-  align-self: flex-end;
-}
-
-.align-self-flex-start {
-  align-self: flex-start;
-}
-
 @include tablet {
-  .hsb {
-    display: flex;
-    justify-content: inherit;
-  }
-  .vsb {
-    display: flex;
-    justify-content: inherit;
-  }
-  .align-self-flex-end {
-    align-self: inherit;
-  }
-  .align-self-flex-start {
-    align-self: inherit;
-  }
-  .hides {
+  .hide-sm {
     display: none;
   }
-  .shows {
+  .show-sm {
     display: inherit;
   }
 }
 
 @include desktop {
-  .hidel {
+  .hide-lg {
     display: none;
   }
-  .showl {
+  .show-lg {
     display: inherit;
   }
 }

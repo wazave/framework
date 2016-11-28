@@ -5,16 +5,14 @@ h1 {
   // color: $heading-font-color;
 }
 
-.tbig {}
-
 html {
-  font-size: $font-size * 1.2;
+  font-size: $font-size * 1;
 }
 
-.tbig {
-  font-size: $font-size * 1.2;
+.text-big {
+  font-size: $font-size * 1;
   &:hover {
-    font-size: $font-size * 1.25;
+    font-size: $font-size * 1.05;
   }
 }
 
@@ -22,7 +20,7 @@ html {
   html {
     font-size: $font-size * 1.1;
   }
-  .tbig {
+  .text-big {
     font-size: $font-size * 1.1;
     &:hover {
       font-size: $font-size * 1.15;
@@ -34,7 +32,7 @@ html {
   html {
     font-size: $font-size * 1.2;
   }
-  .tbig {
+  .text-big {
     font-size: $font-size * 1.2;
     &:hover {
       font-size: $font-size * 1.25;

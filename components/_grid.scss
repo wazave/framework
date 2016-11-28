@@ -1,94 +1,128 @@
-.r {
-  &::before,
-  &::after {
-    display: block;
-    content: ' ';
-    clear: both;
-  }
-  >* {
-    float: left;
-  }
-}
-
-.flex-row {
+// .r {
+//   &::before,
+//   &::after {
+//     display: block;
+//     content: ' ';
+//     clear: both;
+//   }
+//   >* {
+//     float: left;
+//   }
+// }
+// .flex-row {
+//   display: flex;
+//   flex-direction: row;
+//   flex-wrap: wrap;
+// }
+// .flex-column {
+//   flex: 1;
+// }
+// .flex-small,
+// .flex-large {
+//   flex-basis: 100%;
+// }
+// @each $entry in $grid {
+//   .cs#{floor($entry)},
+//   .cl#{floor($entry)} {
+//     width: 100%
+//   }
+// }
+// @each $entry in $grid {
+//   .c#{floor($entry)} {
+//     width: percentage($entry) * 0.01;
+//   }
+// }
+// @each $entry in $flex-order {
+//   .o#{$entry} {
+//     order: $entry;
+//   }
+//   .pc#{floor($entry)} {
+//     margin-left: percentage($entry) * 0.01;
+//   }
+// }
+// @include tablet {
+//   @each $entry in $grid {
+//     .cs#{floor($entry)} {
+//       width: percentage($entry) * 0.01;
+//     }
+//     .pcs#{floor($entry)} {
+//       margin-left: percentage($entry) * 0.01;
+//     }
+//   }
+//   .flex-small {
+//     flex: 1;
+//   }
+//   @each $entry in $flex-order {
+//     .os#{$entry} {
+//       order: $entry;
+//     }
+//   }
+// }
+// @include desktop {
+//   @each $entry in $grid {
+//     .cl#{floor($entry)} {
+//       width: percentage($entry) * 0.01;
+//     }
+//     .pcl#{floor($entry)} {
+//       margin-left: percentage($entry) * 0.01;
+//     }
+//   }
+//   .flex-large {
+//     flex: 1;
+//   }
+//   @each $entry in $flex-order {
+//     .ob#{$entry} {
+//       order: $entry;
+//     }
+//   }
+//   .hl {
+//     display: none;
+//   }
+//   .sl {
+//     display: inherit;
+//   }
+// }
+.row {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
 }
 
-.flex-column {
+.row>* {
   flex: 1;
-}
-
-.flex-small,
-.flex-large {
-  flex-basis: 100%;
-}
-
-
-
-@each $entry in $grid {
-  .cs#{floor($entry)},
-  .cl#{floor($entry)} {
-    width: 100%
+  flex-grow: 4;
+  &.row-sm {
+    flex-grow: 2;
+  }
+  &.row-lg {
+    flex-grow: 8;
   }
 }
 
-@each $entry in $grid {
-  .c#{floor($entry)} {
-    width: percentage($entry) * 0.01;
-  }
+.wrapper {
+  margin: 0 auto;
+  max-width: $phone;
+  padding: $space $space;
 }
 
-@each $entry in $flex-order {
-  .o#{$entry} {
-    order: $entry;
-  }
-  .pc#{floor($entry)} {
-    margin-left: percentage($entry) * 0.01;
-  }
+.wrapper-sm {
+  margin: 0 auto;
+  max-width: $tablet;
+  padding: $space*2 $space*2;
+}
+
+.wrapper-lg {
+  margin: 0 auto;
+  max-width: $desktop;
+  padding: $space*3 $space*3;
 }
 
 @include tablet {
-  @each $entry in $grid {
-    .cs#{floor($entry)} {
-      width: percentage($entry) * 0.01;
-    }
-    .pcs#{floor($entry)} {
-      margin-left: percentage($entry) * 0.01;
-    }
-  }
-  .flex-small {
-    flex: 1;
-  }
-  @each $entry in $flex-order {
-    .os#{$entry} {
-      order: $entry;
-    }
+  .row-sm {
+    display: block;
   }
 }
 
 @include desktop {
-  @each $entry in $grid {
-    .cl#{floor($entry)} {
-      width: percentage($entry) * 0.01;
-    }
-    .pcl#{floor($entry)} {
-      margin-left: percentage($entry) * 0.01;
-    }
-  }
-  .flex-large {
-    flex: 1;
-  }
-  @each $entry in $flex-order {
-    .ob#{$entry} {
-      order: $entry;
-    }
-  }
-  .hl {
-    display: none;
-  }
-  .sl {
-    display: inherit;
+  .row-lg {
+    display: block;
   }
 }
