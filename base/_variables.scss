@@ -7,24 +7,23 @@
     font-family: 'exo';
     src: url('../../css/fonts/exo.woff2');
 }
-
+$font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+$font-size: 1rem;
+$space: 1.5rem;
+// f
 $buttons: ('a.button, .button, button');
 $transition: .15s;
 $phone: 20rem;
 $tablet: 48rem;
 $desktop: 75rem;
-$font-size: 1rem;
-$space: 1.5rem;
 $border: 2px;
+// s
 $background: #ffffff;
 $alternate-background: #d5d5d5;
 $primary-color: #00549F;
 $secondary-color: #68953B;
 $font-color: #555659;
-$font-family: Helvetica Neue,
-Helvetica,
-Arial,
-sans-serif;
+// c
 $blue:#00549F;
 $skyBlue:#4a7bab;
 $green:#68953B;
