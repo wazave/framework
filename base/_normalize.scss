@@ -53,7 +53,11 @@ strong {
 a {
   transition: $transition;
   text-decoration: none;
+  color: $a-color;
   cursor: pointer;
+  &:hover {
+    color: darken($a-color, 20%);
+  }
 }
 
 button {

@@ -15,6 +15,22 @@
   background: darken($background, 10%);
 }
 
+.back-blue {
+  background: $blue;
+}
+
+.back-green {
+  background: $green;
+}
+
+.back-red {
+  background: $red;
+}
+
+.back-yellow {
+  background: $yellow;
+}
+
 .text-primary {
   color: $primary-color;
 }
@@ -56,6 +72,10 @@
   margin-bottom: $space;
 }
 
+.push-none {
+  margin-right: 0;
+}
+
 .island {
   padding: $space;
 }
@@ -67,6 +87,16 @@
 .gutter {
   margin-right: $space;
   margin-left: $space;
+}
+
+.vertical-island {
+  padding-top: $space;
+  padding-bottom: $space; 
+}
+
+.vertical-island-half {
+  padding-top: $space * 0.5;
+  padding-bottom: $space * 0.5; 
 }
 
 // text
@@ -87,15 +117,24 @@
 }
 
 // align
-.image-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
 .horizontal-center {
   display: flex;
   justify-content: center;
+}
+
+.horizontal-left {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.horizontal-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.horizontal-space-between {
+  display: flex;
+  justify-content: space-between;
 }
 
 .vertical-center {
@@ -126,6 +165,15 @@
   display: inherit;
 }
 
+.fixed-full {
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+.shadow {
+  box-shadow: 0 0 1px 0 $a-color;
+}
 @include tablet {
   .hide-sm {
     display: none;

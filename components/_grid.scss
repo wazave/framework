@@ -105,11 +105,11 @@ $line-height-base : 1rem * $line-height-ratio;
   }
 }
 
-.row {
+.row-auto, .row {
   display: flex;
 }
 
-.row>* {
+.row-auto>* {
   flex: 1;
   flex-grow: 4;
   &.row-sm {
@@ -120,10 +120,22 @@ $line-height-base : 1rem * $line-height-ratio;
   }
 }
 
+.row >* {
+  margin-right: $space;
+}
+
+.row {
+  padding-left: $space;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 .wrapper {
   margin: 0 auto;
   max-width: $phone;
-  padding: $space $space;
+  padding: 0 $space;
 }
 
 .wrapper-sm {
@@ -140,17 +152,10 @@ $line-height-base : 1rem * $line-height-ratio;
   .row-sm {
     display: block;
   }
-  .wrapper-sm,
-  .wrapper-lg {
-    padding: $space*2 $space*2;
-  }
 }
 
 @include desktop {
   .row-lg {
     display: block;
-  }
-  .wrapper-lg {
-    padding: $space*3 $space*3;
   }
 }
